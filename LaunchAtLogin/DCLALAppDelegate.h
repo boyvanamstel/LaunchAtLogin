@@ -8,7 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DCLALAppDelegate : NSObject <NSApplicationDelegate>
+#import "StartAtLoginController.h"
+
+@interface DCLALAppDelegate : NSObject <NSApplicationDelegate> {
+    StartAtLoginController *loginController;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

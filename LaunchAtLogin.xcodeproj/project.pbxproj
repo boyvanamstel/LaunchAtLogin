@@ -13,7 +13,34 @@
 		B5E8BF5F15D11E72004ADD09 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B5E8BF5D15D11E72004ADD09 /* Credits.rtf */; };
 		B5E8BF6215D11E72004ADD09 /* DCLALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E8BF6115D11E72004ADD09 /* DCLALAppDelegate.m */; };
 		B5E8BF6515D11E73004ADD09 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E8BF6315D11E73004ADD09 /* MainMenu.xib */; };
+		B5E8BFA215D120B5004ADD09 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E8BFA115D120B5004ADD09 /* ServiceManagement.framework */; };
+		B5E8BFA815D12144004ADD09 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E8BFA715D12144004ADD09 /* StartAtLoginController.m */; };
+		B5E8BFA915D122C0004ADD09 /* LaunchAtLoginHelper.app in Copy Helper Files */ = {isa = PBXBuildFile; fileRef = B5E8BF9B15D11F0E004ADD09 /* LaunchAtLoginHelper.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5E8BF9A15D11F0E004ADD09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5E8BF7F15D11F00004ADD09;
+			remoteInfo = LaunchAtLoginHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5E8BFA315D120D4004ADD09 /* Copy Helper Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				B5E8BFA915D122C0004ADD09 /* LaunchAtLoginHelper.app in Copy Helper Files */,
+			);
+			name = "Copy Helper Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B5E8BF4A15D11E72004ADD09 /* LaunchAtLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAtLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +56,11 @@
 		B5E8BF6015D11E72004ADD09 /* DCLALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLALAppDelegate.h; sourceTree = "<group>"; };
 		B5E8BF6115D11E72004ADD09 /* DCLALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLALAppDelegate.m; sourceTree = "<group>"; };
 		B5E8BF6415D11E73004ADD09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AutoStartHelper.xcodeproj; path = AutoStartHelper/AutoStartHelper.xcodeproj; sourceTree = "<group>"; };
+		B5E8BF9815D11F0E004ADD09 /* LaunchAtLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LaunchAtLogin.entitlements; sourceTree = "<group>"; };
+		B5E8BFA115D120B5004ADD09 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		B5E8BFA615D12144004ADD09 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
+		B5E8BFA715D12144004ADD09 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E8BFA215D120B5004ADD09 /* ServiceManagement.framework in Frameworks */,
 				B5E8BF4F15D11E72004ADD09 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +79,9 @@
 		B5E8BF3F15D11E72004ADD09 = {
 			isa = PBXGroup;
 			children = (
+				B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */,
 				B5E8BF5415D11E72004ADD09 /* LaunchAtLogin */,
+				B5E8BFA415D12144004ADD09 /* Vendor */,
 				B5E8BF4D15D11E72004ADD09 /* Frameworks */,
 				B5E8BF4B15D11E72004ADD09 /* Products */,
 			);
@@ -63,6 +98,7 @@
 		B5E8BF4D15D11E72004ADD09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5E8BFA115D120B5004ADD09 /* ServiceManagement.framework */,
 				B5E8BF4E15D11E72004ADD09 /* Cocoa.framework */,
 				B5E8BF5015D11E72004ADD09 /* Other Frameworks */,
 			);
@@ -82,6 +118,7 @@
 		B5E8BF5415D11E72004ADD09 /* LaunchAtLogin */ = {
 			isa = PBXGroup;
 			children = (
+				B5E8BF9815D11F0E004ADD09 /* LaunchAtLogin.entitlements */,
 				B5E8BF6015D11E72004ADD09 /* DCLALAppDelegate.h */,
 				B5E8BF6115D11E72004ADD09 /* DCLALAppDelegate.m */,
 				B5E8BF6315D11E73004ADD09 /* MainMenu.xib */,
@@ -102,6 +139,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B5E8BF7015D11EC5004ADD09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8BF9B15D11F0E004ADD09 /* LaunchAtLoginHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5E8BFA415D12144004ADD09 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8BFA515D12144004ADD09 /* StartAtLoginController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B5E8BFA515D12144004ADD09 /* StartAtLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8BFA615D12144004ADD09 /* StartAtLoginController.h */,
+				B5E8BFA715D12144004ADD09 /* StartAtLoginController.m */,
+			);
+			path = StartAtLoginController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +174,7 @@
 				B5E8BF4615D11E72004ADD09 /* Sources */,
 				B5E8BF4715D11E72004ADD09 /* Frameworks */,
 				B5E8BF4815D11E72004ADD09 /* Resources */,
+				B5E8BFA315D120D4004ADD09 /* Copy Helper Files */,
 			);
 			buildRules = (
 			);
@@ -142,12 +205,28 @@
 			mainGroup = B5E8BF3F15D11E72004ADD09;
 			productRefGroup = B5E8BF4B15D11E72004ADD09 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B5E8BF7015D11EC5004ADD09 /* Products */;
+					ProjectRef = B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B5E8BF4915D11E72004ADD09 /* LaunchAtLogin */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B5E8BF9B15D11F0E004ADD09 /* LaunchAtLoginHelper.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LaunchAtLoginHelper.app;
+			remoteRef = B5E8BF9A15D11F0E004ADD09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B5E8BF4815D11E72004ADD09 /* Resources */ = {
@@ -169,6 +248,7 @@
 			files = (
 				B5E8BF5B15D11E72004ADD09 /* main.m in Sources */,
 				B5E8BF6215D11E72004ADD09 /* DCLALAppDelegate.m in Sources */,
+				B5E8BFA815D12144004ADD09 /* StartAtLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +334,7 @@
 		B5E8BF6915D11E73004ADD09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LaunchAtLogin/LaunchAtLogin.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaunchAtLogin/LaunchAtLogin-Prefix.pch";
@@ -266,7 +347,9 @@
 		B5E8BF6A15D11E73004ADD09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LaunchAtLogin/LaunchAtLogin.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaunchAtLogin/LaunchAtLogin-Prefix.pch";
 				INFOPLIST_FILE = "LaunchAtLogin/LaunchAtLogin-Info.plist";
@@ -294,6 +377,7 @@
 				B5E8BF6A15D11E73004ADD09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
