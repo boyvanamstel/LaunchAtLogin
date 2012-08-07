@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56588D515D12C7900F90694 /* LaunchAtLoginHelper.app in Copy Helper Files */ = {isa = PBXBuildFile; fileRef = B56588D415D12C6E00F90694 /* LaunchAtLoginHelper.app */; };
 		B5E8BF4F15D11E72004ADD09 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E8BF4E15D11E72004ADD09 /* Cocoa.framework */; };
 		B5E8BF5915D11E72004ADD09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5E8BF5715D11E72004ADD09 /* InfoPlist.strings */; };
 		B5E8BF5B15D11E72004ADD09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E8BF5A15D11E72004ADD09 /* main.m */; };
@@ -15,13 +16,12 @@
 		B5E8BF6515D11E73004ADD09 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E8BF6315D11E73004ADD09 /* MainMenu.xib */; };
 		B5E8BFA215D120B5004ADD09 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E8BFA115D120B5004ADD09 /* ServiceManagement.framework */; };
 		B5E8BFA815D12144004ADD09 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E8BFA715D12144004ADD09 /* StartAtLoginController.m */; };
-		B5E8BFA915D122C0004ADD09 /* LaunchAtLoginHelper.app in Copy Helper Files */ = {isa = PBXBuildFile; fileRef = B5E8BF9B15D11F0E004ADD09 /* LaunchAtLoginHelper.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5E8BF9A15D11F0E004ADD09 /* PBXContainerItemProxy */ = {
+		B56588D315D12C6E00F90694 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */;
+			containerPortal = B56588CB15D12C6E00F90694 /* LaunchAtLogin.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B5E8BF7F15D11F00004ADD09;
 			remoteInfo = LaunchAtLoginHelper;
@@ -35,7 +35,7 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				B5E8BFA915D122C0004ADD09 /* LaunchAtLoginHelper.app in Copy Helper Files */,
+				B56588D515D12C7900F90694 /* LaunchAtLoginHelper.app in Copy Helper Files */,
 			);
 			name = "Copy Helper Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B56588CB15D12C6E00F90694 /* LaunchAtLogin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LaunchAtLogin.xcodeproj; path = LaunchAtLoginHelper/LaunchAtLogin.xcodeproj; sourceTree = "<group>"; };
 		B5E8BF4A15D11E72004ADD09 /* LaunchAtLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAtLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E8BF4E15D11E72004ADD09 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B5E8BF5115D11E72004ADD09 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -56,7 +57,6 @@
 		B5E8BF6015D11E72004ADD09 /* DCLALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLALAppDelegate.h; sourceTree = "<group>"; };
 		B5E8BF6115D11E72004ADD09 /* DCLALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLALAppDelegate.m; sourceTree = "<group>"; };
 		B5E8BF6415D11E73004ADD09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AutoStartHelper.xcodeproj; path = AutoStartHelper/AutoStartHelper.xcodeproj; sourceTree = "<group>"; };
 		B5E8BF9815D11F0E004ADD09 /* LaunchAtLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LaunchAtLogin.entitlements; sourceTree = "<group>"; };
 		B5E8BFA115D120B5004ADD09 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		B5E8BFA615D12144004ADD09 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
@@ -76,10 +76,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B56588CC15D12C6E00F90694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56588D415D12C6E00F90694 /* LaunchAtLoginHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B5E8BF3F15D11E72004ADD09 = {
 			isa = PBXGroup;
 			children = (
-				B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */,
+				B56588CB15D12C6E00F90694 /* LaunchAtLogin.xcodeproj */,
 				B5E8BF5415D11E72004ADD09 /* LaunchAtLogin */,
 				B5E8BFA415D12144004ADD09 /* Vendor */,
 				B5E8BF4D15D11E72004ADD09 /* Frameworks */,
@@ -137,14 +145,6 @@
 				B5E8BF5D15D11E72004ADD09 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B5E8BF7015D11EC5004ADD09 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B5E8BF9B15D11F0E004ADD09 /* LaunchAtLoginHelper.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B5E8BFA415D12144004ADD09 /* Vendor */ = {
@@ -207,8 +207,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B5E8BF7015D11EC5004ADD09 /* Products */;
-					ProjectRef = B5E8BF6F15D11EC5004ADD09 /* AutoStartHelper.xcodeproj */;
+					ProductGroup = B56588CC15D12C6E00F90694 /* Products */;
+					ProjectRef = B56588CB15D12C6E00F90694 /* LaunchAtLogin.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -219,11 +219,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B5E8BF9B15D11F0E004ADD09 /* LaunchAtLoginHelper.app */ = {
+		B56588D415D12C6E00F90694 /* LaunchAtLoginHelper.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = LaunchAtLoginHelper.app;
-			remoteRef = B5E8BF9A15D11F0E004ADD09 /* PBXContainerItemProxy */;
+			remoteRef = B56588D315D12C6E00F90694 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

@@ -134,7 +134,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Danger Cove";
 			};
-			buildConfigurationList = B592DBE715D0F077000133DA /* Build configuration list for PBXProject "AutoStartHelper" */;
+			buildConfigurationList = B592DBE715D0F077000133DA /* Build configuration list for PBXProject "LaunchAtLogin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -284,7 +284,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B592DBE715D0F077000133DA /* Build configuration list for PBXProject "AutoStartHelper" */ = {
+		B592DBE715D0F077000133DA /* Build configuration list for PBXProject "LaunchAtLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B592DC0915D0F077000133DA /* Debug */,
